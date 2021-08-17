@@ -22,15 +22,3 @@ article > header {
   margin-top: 48px;
 }
 </style>
-
-<page-query>
-query Post ($path: String!) {
-   post: blogPost (path: $path) {
-    id
-    title
-    date (format: "MMMM D, YYYY")
-    timeToRead
-    content
-  }
-}
-</page-query>
